@@ -8,6 +8,7 @@ const options = require('../swagger/index.js');
 
 // App Modules
 const User = require('../Models/User');
+const Service = require('../Models/Service');
 
 /**
  * @swagger
@@ -83,6 +84,26 @@ router.use(function(err, req, res, next) {
 			message: err.message
 		}
 	});
+});
+
+router.post("/services", function (req, res) {
+	const myService = new Service({
+		userID: req.body.userID,
+		title: req.body.title,
+		description: req.body.description,
+		rating: Number(req.body.rating),
+		category: req.body.category,
+		cost: Number(req.body.cost)
+	});
+
+	myService
+		.save()
+		.then(result =>{
+			console.log(result);
+		})
+		.catch(err =>{
+			console.log(err);
+		});
 });
 
 module.exports = router;
