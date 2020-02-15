@@ -10,6 +10,7 @@ const options = require('../swagger/index.js');
 const User = require('../Models/UserModel');
 const Service = require('../Models/ServiceModel');
 const userController = require('../Controller/userController.js');
+const serviceController = require('../Controller/serviceController.js');
 
 /**
  * @swagger
@@ -62,6 +63,8 @@ router.use(function(err, req, res, next) {
 		}
 	});
 });
+
+router.route('/services').get(serviceController.findAll).post(serviceController.new);
 
 router.post("/services", function (req, res) {
 	const myService = new Service({
