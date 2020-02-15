@@ -1,8 +1,12 @@
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://editsync:1234567890@hackthevalley-mbz5f.gcp.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+	res.send('Hello World');
+});
+
+
+app.listen(process.env.PORT, () => {
+  console.log(`Server started on port`);
 });
