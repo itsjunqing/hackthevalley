@@ -51,3 +51,20 @@ exports.averageRating = async function(req, res) {
         res.json({rating: sum})
     }
 }
+
+exports.averageRatingEveryone = async function(req, res) {
+    let reviewList = await Review.find({});
+    if (reviewList == null){
+        res.json({rating: null})
+    }else{
+        let sum = 0;
+        reviewList.forEach(review => {
+            sum += review.rating;
+            console.log(sum);
+        });
+        console.log(reviewList.length);
+        sum /= reviewList.length;
+        console.log(sum);
+        res.json({rating: sum})
+    }
+}

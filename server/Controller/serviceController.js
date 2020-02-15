@@ -14,6 +14,22 @@ exports.findAll = async function(req, res) {
 	}
 };
 
+exports.findCategory = async function(req, res) {
+	try {
+		const {category} = req.query;
+		let searchResult = await Service.find({category: category});
+		console.log(searchResult)
+		res.json({
+			status: 'success',
+			message: 'Service retrieved successfully',
+			data: searchResult
+		});
+	} catch (err) {
+		res.json(err);
+		throw err;
+	}
+};
+
 exports.new = function(req, res) {
     let service = Service();
     service.userID = req.body.userID;
