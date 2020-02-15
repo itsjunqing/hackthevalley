@@ -15,6 +15,6 @@ router.use(errorHandler.errorForward);
 router.use(errorHandler.errorHandler);
 
 router.route('/user').get(userController.findAll).post(userController.new);
-router.route('/services').get(serviceController.findAll).post(serviceController.new);
+router.route('/service').get(serviceController.findAll).post(serviceController.new);
 
 module.exports = router;
