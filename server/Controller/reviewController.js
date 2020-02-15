@@ -5,7 +5,7 @@ exports.findAll = async function(req, res) {
         const results = await Review.find({});
         res.json({
             status: 'success',
-            message: 'Contacts retrieved successfully',
+            message: 'Review retrieved successfully',
             data: results
         });
     } catch (err) {
