@@ -1,13 +1,12 @@
 'use strict';
+const mongoose = require('mongoose');
 
-class User {
-	constructor(name, email) {
-		this.name = name;
-		this.email = email;
-	}
-}
+const UserSchema = mongoose.Schema({
+	name: String,
+	email: String
+});
 
-module.exports = User;
+module.exports = mongoose.model("Users", UserSchema);
 
 /**
  * @swagger
