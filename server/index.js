@@ -17,7 +17,7 @@ const mongooseUrl =
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-//connect to mongodb altas
+//connect to mongodb atlas
 mongoose.connect(mongooseUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;

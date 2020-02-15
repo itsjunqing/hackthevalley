@@ -1,21 +1,20 @@
-const requestify = require('requestify');
+const fetch = require('node-fetch');
 
-var jsonObject;
-async function main(){
-    let data = await requestify.get("http://localhost:3000/api/v1/service");
-    return data.getBody();
-}
-jsonObject = main();
-let hi;
-jsonObject.then(function (result) {
-    let json = result.data;
-    for(var x = 0; x < json.length; x++){
-        // console.log(json[x].title);
-        if(json[x].title === "dsadsad"){
-            hi = json[x];
-            return;
+function getServiceByTitle(title) {
+    fetch("http://localhost:3000/api/v1/service").then((data) => {
+        return data.json();
+    }).then((data) => {
+        console.log(data.data);
+        let json = data.data;
+        for(let x = 0; x < json.length; x++){
+            if(json[x].title === title){
+                console.log(json[x]);
+                return json[x]
+            }
         }
-    }
-});
+    })
+}
 
-console.log(hi);
+let a = getServiceByTitle("ASDASDADA");
+
+console.log(a);
