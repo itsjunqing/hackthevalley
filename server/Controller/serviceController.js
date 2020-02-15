@@ -5,7 +5,7 @@ exports.findAll = async function(req, res) {
         const results = await Service.find({});
         res.json({
             status: 'success',
-            message: 'Contacts retrieved successfully',
+            message: 'Service retrieved successfully',
             data: results
         });
     } catch (err) {
