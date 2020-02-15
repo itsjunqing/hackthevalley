@@ -11,4 +11,4 @@ exports.errorHandler = function(err, req, res, next) {
 			message: err.message
 		}
 	});
-};
+}
