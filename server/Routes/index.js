@@ -8,11 +8,12 @@ const errorHandler = require('../handler/index.js');
 //Model Controllers
 const userController = require('../Controller/userController.js');
 const serviceController = require('../Controller/serviceController.js');
-
+const loginController = require('../Controller/loginController.js');
 
 //api routes
 router.route('/user').get(userController.findAll).post(userController.new);
 router.route('/service').get(serviceController.findAll).post(serviceController.new);
+router.route('/login').get(loginController.login);
 
 // catch 404 and forward to error handler
 router.use(errorHandler.errorForward);
