@@ -1,17 +1,20 @@
+'use strict';
+// Node Modules
 const express = require('express');
+const bodyParser = require('body-parser');
 
+// App Modules
+const routes = require('./Routes');
+
+// Set up app
 const app = express();
+const port = process.env.PORT || 3000;
 
-const test = require('./routes/api-endpoint.js');
-const testList = require('./routes/test-list.js');
+// parse incoming requests
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/test', test);
-app.use('/testApi', testList);
+// include routes
+app.use('/api/v1', routes);
 
-app.get('/', (req, res) => {
-	res.send('Heat Beating Tick Tick');
-});
-
-app.listen(process.env.PORT || 3000, () => {
-	console.log(`Server started on ${process.env.PORT || 3000}`);
-});
+app.listen(port, () => console.log(`Swagger That API listening on port ${port}!`));
