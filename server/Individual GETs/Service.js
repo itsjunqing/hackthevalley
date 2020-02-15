@@ -6,9 +6,16 @@ async function main(){
     return data.getBody();
 }
 jsonObject = main();
+let hi;
 jsonObject.then(function (result) {
     let json = result.data;
     for(var x = 0; x < json.length; x++){
-        console.log(json[x].title);
+        // console.log(json[x].title);
+        if(json[x].title === "dsadsad"){
+            hi = json[x];
+            return;
+        }
     }
 });
+
+console.log(hi);
