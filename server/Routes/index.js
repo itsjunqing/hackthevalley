@@ -39,7 +39,6 @@ const userController = require('../Controller/userController.js');
  */
 router.post('/user', userController.new);
 
-
 const specs = swaggerJsdoc(options);
 router.use('/docs', swaggerUi.serve);
 router.get('/docs', swaggerUi.setup(specs, { explorer: true }));
