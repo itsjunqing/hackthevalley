@@ -19,7 +19,7 @@ exports.new = function(req, res) {
     review.rating = req.body.rating;
     review.comment = req.body.comment;
     review.userName = req.body.userName;
-    review.service = req.body.service;
+    review.serviceProvider = req.body.serviceProvider;
 
 	//saves in database
 	review.save(function(err) {
@@ -28,21 +28,21 @@ exports.new = function(req, res) {
 			throw err;
 		}
 		res.json({
-			message: 'New Service created!',
+			message: 'New Service Provider created!',
 			data: review
 		});
 	});
 };
 
 exports.averageRating = async function(req, res) {
-    const {service} = req.query;
-    let reviewList = await Review.find({service: service});
+    const {serviceProvider} = req.query;
+    let reviewList = await Review.find({service: serviceProvider});
     if (reviewList == null){
-        res.json({rating: "No rating yet"})
+        res.json({rating: null})
     }else{
         let sum = 0;
         reviewList.forEach(review => {
-            sum += parseInt(review.rating);
+            sum += review.rating;
             console.log(sum);
         });
         console.log(reviewList.length);
