@@ -11,7 +11,6 @@ const serviceController = require('../Controller/serviceController.js');
 const loginController = require('../Controller/loginController.js');
 const reviewController = require('../Controller/reviewController.js');
 
-
 //api routes
 router.route('/user').get(userController.findAll).post(userController.new);
 router.route('/service').get(serviceController.findAll).post(serviceController.new);
