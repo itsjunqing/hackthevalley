@@ -31,4 +31,18 @@ exports.new = function(req, res) {
             data: review
         });
     });
+
 };
+
+exports.averageRating = async function(req, res) {
+    let reviewList = await Review.find({});
+    let sum = 0;
+    reviewList.forEach(review => {
+        sum += parseInt(review.rating);
+        console.log(sum);
+    });
+    console.log(reviewList.length);
+    sum /= reviewList.length;
+    console.log(sum);
+    res.json({rating: sum})
+}
