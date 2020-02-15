@@ -2,9 +2,11 @@ const express = require('express');
 
 const app = express();
 
-const routes = require('./routes/api-endpoint.js');
+const test = require('./routes/api-endpoint.js');
+const testList = require('./routes/test-list.js');
 
-app.use('/test', routes);
+app.use('/test', test);
+app.use('/testApi', testList);
 
 app.get('/', (req, res) => {
 	res.send('Heat Beating Tick Tick');
