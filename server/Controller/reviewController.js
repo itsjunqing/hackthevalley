@@ -15,10 +15,11 @@ exports.findAll = async function(req, res) {
 };
 
 exports.new = function(req, res) {
-	let review = Review();
-	review.rating = req.body.rating;
-	review.comment = req.body.comment;
-	review.userName = req.body.userName;
+    let review = Review();
+    review.rating = req.body.rating;
+    review.comment = req.body.comment;
+    review.userName = req.body.userName;
+    review.service = req.body.service;
 
 	//saves in database
 	review.save(function(err) {
