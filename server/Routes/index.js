@@ -83,7 +83,10 @@ const options = {
 		},
 		servers: [
 			{
-				url: 'http://localhost:3000/api/v1'
+				url: 'https://hackthevalley123456789.appspot.com/api/v1'
+			},
+			{
+				url: 'https://localhost:3000/api/v1'
 			}
 		]
 	},
