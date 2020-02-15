@@ -8,8 +8,6 @@ const Service = require('../Models/ServiceModel');
 const userController = require('../Controller/userController.js');
 const serviceController = require('../Controller/serviceController.js');
 
-router.route('/user').get(userController.findAll).post(userController.new);
-
 // catch 404 and forward to error handler
 router.use(function(req, res, next) {
 	var err = new Error('Not Found');
@@ -27,6 +25,7 @@ router.use(function(err, req, res, next) {
 	});
 });
 
+router.route('/user').get(userController.findAll).post(userController.new);
 router.route('/services').get(serviceController.findAll).post(serviceController.new);
 
 module.exports = router;
