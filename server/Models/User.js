@@ -7,7 +7,7 @@ const UserSchema = mongoose.Schema({
 	userID: String
 });
 
-module.exports = mongoose.model("Users", UserSchema);
+module.exports = mongoose.model('Users', UserSchema);
 
 /**
  * @swagger

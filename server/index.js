@@ -23,8 +23,10 @@ mongoose.connect(
 const db = mongoose.connection;
 
 // Added check for DB connection
-if (!db) console.log('Error connecting db');
-else console.log('Db connected successfully');
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function(callback) {
+	console.log('connection to db open');
+});
 
 // include routes
 app.use('/api/v1', routes);
