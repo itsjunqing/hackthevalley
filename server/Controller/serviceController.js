@@ -22,6 +22,8 @@ exports.new = function(req, res) {
     service.rating = req.body.rating;
     service.category = req.body.category;
     service.cost = req.body.cost;
+    service.long = req.body.long;
+    service.lat = req.body.lat;
 
     //saves in database
     service.save(function(err) {

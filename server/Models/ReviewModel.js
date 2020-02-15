@@ -5,6 +5,7 @@ const ReviewSchema = mongoose.Schema({
     rating: String,
     comment: String,
     userName: String,
+    service: String,
     date: {type:Date, default:Date.now}
 });
 

@@ -19,6 +19,7 @@ exports.new = function(req, res) {
     review.rating = req.body.rating;
     review.comment = req.body.comment;
     review.userName = req.body.userName;
+    review.service = req.body.service;
 
     //saves in database
     review.save(function(err) {
