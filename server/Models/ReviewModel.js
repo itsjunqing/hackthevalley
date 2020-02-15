@@ -2,10 +2,10 @@
 const mongoose = require('mongoose');
 
 const ReviewSchema = mongoose.Schema({
-	rating: String,
+	rating: Number,
 	comment: String,
 	userName: String,
-	service: String,
+	serviceProvider: String,
 	date: { type: Date, default: Date.now }
 });
 
