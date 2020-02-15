@@ -29,24 +29,4 @@ router.use(function(err, req, res, next) {
 
 router.route('/services').get(serviceController.findAll).post(serviceController.new);
 
-router.post("/services", function (req, res) {
-	const myService = new Service({
-		userID: req.body.userID,
-		title: req.body.title,
-		description: req.body.description,
-		rating: Number(req.body.rating),
-		category: req.body.category,
-		cost: Number(req.body.cost)
-	});
-
-	myService
-		.save()
-		.then((result) => {
-			console.log(result);
-		})
-		.catch((err) => {
-			console.log(err);
-		});
-});
-
 module.exports = router;
