@@ -3,7 +3,6 @@
 const express = require('express');
 const router = express.Router();
 
-
 //Model Controllers
 const Service = require('../Models/ServiceModel');
 const userController = require('../Controller/userController.js');
