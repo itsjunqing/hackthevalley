@@ -15,15 +15,16 @@ exports.findAll = async function(req, res) {
 };
 
 exports.new = function(req, res) {
-    let service = Service();
-    service.userID = req.body.userID;
-    service.title = req.body.title;
-    service.description = req.body.description;
-    service.rating = req.body.rating;
-    service.category = req.body.category;
-    service.cost = req.body.cost;
-    service.long = req.body.long;
-    service.lat = req.body.lat;
+	// console.log('new working');
+	let service = Service();
+	service.userID = req.body.userID;
+	service.title = req.body.title;
+	service.description = req.body.description;
+	service.rating = req.body.rating;
+	service.category = req.body.category;
+	service.cost = req.body.cost;
+	service.long = req.body.long;
+	service.lat = req.body.lat;
 
 	//saves in database
 	service.save(function(err) {

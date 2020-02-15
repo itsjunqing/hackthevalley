@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //cors
-app.use(cors())
+app.use(cors());
 
 //connect to mongodb altas
 mongoose.connect(mongooseUrl, { useNewUrlParser: true, useUnifiedTopology: true });
