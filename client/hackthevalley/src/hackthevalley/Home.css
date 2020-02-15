@@ -1,0 +1,42 @@
+#bg {
+    height: 10%;
+    /* max-height: 70%; */
+    width: 100%;
+    /* max-width: 100; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container {
+    position: relative;
+    color: black;
+}
+
+.home-title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 100px;
+    font-style: bold;
+}
+
+.home-heading {
+    position: absolute;
+    top: 185px;
+    left: 50px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+div.transbox {
+    background-color: #ffffff;
+    border-bottom: 5px solid black;
+    filter: alpha(opacity=60); 
+}
+   
+.description {
+    font-family: "Times New Roman";
+    margin-left: 50px;
+    margin-right: 50px;
+}
