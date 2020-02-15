@@ -8,6 +8,8 @@ const ServiceSchema = mongoose.Schema({
     rating: String,
     category: String,
     cost: String,
+    long: [Number],
+    lat: [Number],
     date: {type:Date, default:Date.now}
 });
 

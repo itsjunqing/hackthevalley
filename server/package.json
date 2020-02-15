@@ -12,12 +12,16 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"body-parser": "latest",
 		"express": "^4.17.1",
 		"mongoose": "^5.9.1",
 		"nodemon": "^2.0.2",
-		"body-parser": "latest"
+		"requestify": "^0.2.5"
 	},
 	"engines": {
 		"node": "9"
+	},
+	"devDependencies": {
+		"request": "^2.88.2"
 	}
 }
