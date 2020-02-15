@@ -5,9 +5,9 @@ const ServiceSchema = mongoose.Schema({
     userID: String,
     title: String,
     description: String,
-    rating: [Number],
+    rating: String,
     category: String,
-    cost: [Number],
+    cost: String,
     date: {type:Date, default:Date.now}
 });
 

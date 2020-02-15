@@ -12,7 +12,7 @@ const serviceController = require('../Controller/serviceController.js');
 
 //api routes
 router.route('/user').get(userController.findAll).post(userController.new);
-router.route('/services').get(serviceController.findAll).post(serviceController.new);
+router.route('/service').get(serviceController.findAll).post(serviceController.new);
 
 // catch 404 and forward to error handler
 router.use(errorHandler.errorForward);

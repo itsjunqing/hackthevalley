@@ -19,9 +19,9 @@ exports.new = function(req, res) {
     service.userID = req.body.userID;
     service.title = req.body.title;
     service.description = req.body.description;
-    service.rating = Number(req.body.rating);
+    service.rating = req.body.rating;
     service.category = req.body.category;
-    service.cost = Number(req.body.cost);
+    service.cost = req.body.cost;
 
     //saves in database
     service.save(function(err) {
