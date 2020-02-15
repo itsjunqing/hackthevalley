@@ -7,7 +7,7 @@ const swaggerUi = require('swagger-ui-express');
 const options = require('../swagger/index.js');
 
 // App Modules
-const User = require('../Models/User');
+const userController = require('../Controller/userController.js');
 
 /**
  * @swagger
@@ -37,32 +37,8 @@ const User = require('../Models/User');
  *              schema:
  *                $ref: '#/components/schemas/User'
  */
-router.post('/users', (req, res, next) => {
-	const { email, name } = req.body;
-	const user = new User(name, email);
-	res.json(user);
-});
+router.post('/user', userController.new);
 
-/**
- * @swagger
- * path:
- *  /users/:
- *    get:
- *      summary: Get all users
- *      tags: [Users]
- *      responses:
- *        "200":
- *          description: An array of users
- *          content:
- *            application/json:
- *              schema:
- *                $ref: '#/components/schemas/User'
- */
-router.get('/users', (req, res, next) => {
-	const userOne = new User('Alexander', 'fake@gmail.com');
-	const userTwo = new User('Ryan', 'fakeagain@gmail.com');
-	res.json({ userOne, userTwo });
-});
 
 const specs = swaggerJsdoc(options);
 router.use('/docs', swaggerUi.serve);
