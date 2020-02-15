@@ -37,7 +37,8 @@ const userController = require('../Controller/userController.js');
  *              schema:
  *                $ref: '#/components/schemas/User'
  */
-router.post('/user', userController.new);
+
+router.route('/user').get(userController.findAll).post(userController.new);
 
 const specs = swaggerJsdoc(options);
 router.use('/docs', swaggerUi.serve);
