@@ -1,4 +1,4 @@
-User = require('../Models/User.js');
+User = require('../Models/UserModel.js/index.js');
 
 exports.findAll = async function(req, res) {
 	try {

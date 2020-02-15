@@ -7,8 +7,8 @@ const swaggerUi = require('swagger-ui-express');
 const options = require('../swagger/index.js');
 
 // App Modules
-const User = require('../Models/User');
-const Service = require('../Models/Service');
+const User = require('../Models/UserModel');
+const Service = require('../Models/ServiceModel');
 const userController = require('../Controller/userController.js');
 
 /**
