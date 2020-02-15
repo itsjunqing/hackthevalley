@@ -5,7 +5,7 @@ const ServiceSchema = mongoose.Schema({
     userID: String,
     title: String,
     description: String,
-    rating: String,
+    rating: Number,
     category: String,
     cost: String,
     long: [Number],
