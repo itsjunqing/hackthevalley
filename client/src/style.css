@@ -1,5 +1,5 @@
 body {
-    background-color: #ebfff2;
+    background-color: #EDF7B8;
     font-family: 'SFProDisplay';
 }
 
@@ -8,53 +8,39 @@ body {
     background-color: black;
 }
 
-.home-heading{
-    font-family: 'SFProDisplay';
-}
-
-.home-description{
-    font-family: 'SFProDisplay';
-    /* opacity: 70% !important; */
-}
-
-.home-advantages{
-    font-family: 'SFProDisplay';
-    /* opacity: 70%; */
-}
-
-.home-subtitle{
-    font-family: 'SFProDisplay';
-    /* opacity: 70%; */
-}
-
-h3{
-    font-family: 'SFProDisplay';
-}
-
 .btn:hover {
     background-color: black;
-}
-
-.image{
-    position: relative;
-    width: 100%;
-}
-
-.helloworld{
-    font-family: 'SFProDisplay';
 }
 
 .btn:focus {
     background-color: black;
 }
 
-.hellllo{
-    background-color: #FFFFFF;
-    border: 2px solid #42af6c;
-}
-
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay'),
-    url('./fonts/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
-  }
+    url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+}
+
+#navposition {
+    position: relative;
+}
+
+.image-mover {
+    position: absolute;
+    right: 40px;
+}
+
+.img-responsive3 {
+    border-radius: 15px;
+}
+
+#image-center1 {
+    display: flex;
+    justify-content: center;
+}
+
+#image-change {
+    margin-left: 30px;
+    margin-right: 30px;
+}

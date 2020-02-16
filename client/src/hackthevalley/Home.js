@@ -13,8 +13,8 @@ class Home extends Component {
         return (
             <div class="home-container">
                 <Typing>
-                    <span class="home-title"><img src={require('./logo.png')} width={'800px'}/> </span>
-                    <span class="home-heading"><br />Connecting skilled labour professionals with customers.</span>
+                    <span class="home-title">WORKBOUNCE</span>
+                    <span class="home-heading">Connecting skilled labour professionals with customers.</span>
                 </Typing>
                 <div class="transbox">
                     <img id="bg" className="img-responsive" src={logo} alt="logo"/>
@@ -25,8 +25,8 @@ class Home extends Component {
                     <br></br>
                     <br></br>
                     <div class="row">
-                        <h3 class="home-description">Our goal is to promote the skilled labour industry by allowing workers to advertise their services
-                        and users can legitimize their services by leaving reviews.</h3>
+                        <h3 class="home-description">"WorkBounce aims to promote the skilled labour industry by allowing workers to advertise their services  
+                        and users can legitimize their services by leaving reviews."</h3>
                     </div>
                     <br></br>
                     <br></br>
@@ -93,7 +93,7 @@ function Example() {
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
             >
-            Testimonials From Real Customers
+            See what others have to say about our application!
             </Button>
         </div>
         <Collapse in={open}>
