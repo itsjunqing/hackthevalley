@@ -68,3 +68,8 @@ exports.userAverageRatingEveryone = async function(req, res) {
         res.json({rating: sum})
     }
 }
+
+exports.getReviews = async function (req, res) {
+    let reviewList = await UserReview.find({});
+    res.send(reviewList);
+}

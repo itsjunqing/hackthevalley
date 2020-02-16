@@ -26,7 +26,10 @@ router.route('/average').get(reviewController.averageRating);
 router.route('/averageEveryone').get(reviewController.averageRatingEveryone);
 router.route('/userAverageEveryone').get(userReviewController.userAverageRatingEveryone);
 router.route('/userAverage').get(userReviewController.userAverageRating);
-router.route('/userReview').get(userReviewController.userFindAll)
+router.route('/userReview').get(userReviewController.userFindAll);
+
+router.route('/getUserReviews').get(userReviewController.getReviews);
+
 router.route('/userReviewCreate').get(userReviewController.userNew);
 
 // catch 404 and forward to error handler
