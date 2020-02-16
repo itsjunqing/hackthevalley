@@ -10,7 +10,7 @@ class ContactUs extends Component {
                 <div class="contact-title">
                     <h1>Contact us</h1>
                     <br></br>
-                    <h2>Please feel free to reach out for more information</h2>
+                    <h2>Please feel free to reach out for more information!</h2>
                 </div>
 
                 <div class="contact-form">

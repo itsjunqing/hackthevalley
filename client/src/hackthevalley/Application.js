@@ -26,11 +26,12 @@ export default class ServiceForm extends React.Component {
 	}
 
 	async handleSubmit(event) {
-		const { userId, title, description, category, cost } = this.state;
+    const { userId, title, description, category, cost } = this.state;
+    console.log(userId)
 		// console.log(this.state.userId);
 		event.preventDefault();
 		const response = await fetch(
-			`https://hackthevalley123456789.appspot.com/api/v1/serviceCreate?userId=${userId}&title=${title}&category=${category}&description=${description}&cost=${parseInt(
+			`https://hackthevalley123456789.appspot.com/api/v1/serviceCreate?userID=${userId}&title=${title}&category=${category}&description=${description}&cost=${parseInt(
 				cost
 			)}`
 		);
@@ -45,7 +46,7 @@ export default class ServiceForm extends React.Component {
             <div class="col center">
             <form class="application-body" onSubmit={this.handleSubmit}>
             <br></br>
-            <h1 class="application-title">Work With Us</h1>
+            <h1 class="application-title">Application Form</h1>
         
         <fieldset>
         <legend><span class="number">1</span>Profile Information</legend>
@@ -68,8 +69,7 @@ export default class ServiceForm extends React.Component {
           <input class="application-input" type="number" id="cost" name="cost" value={this.state.cost} onChange={this.handleChange}></input>
           
           <label for="description">Description:</label>
-          <textarea class="application-input" type="text" id="description" name="description" value={this.state.description} onChange={this.handleChange}></textarea>
-          
+          <textarea class="application-input" id="description" name="description" value={this.state.description} onChange={this.handleChange}></textarea>
         </fieldset>
     
         <button type="submit">Sign Up</button>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ServiceCard from './ServiceCard';
+import ServiceCard from './components/ServiceCard.js';
 import './Dashboard.css'
 
 export default class Dashboard extends Component {
@@ -42,7 +42,7 @@ export default class Dashboard extends Component {
 				<form onSubmit={this.handleSubmit}>
                     <br></br>
 					<label class="dashboard-label">
-						<h1 class="helloworld">Find Workers.</h1><pre />
+						<h1>Find Your Workers Here!</h1><pre />
 						<select class="dashboard-options" value={this.state.search} onChange={this.handleChange}>
 							<option value="Electrian">Electrian</option>
 							<option value="Handyman">Handyman</option>
@@ -56,7 +56,7 @@ export default class Dashboard extends Component {
                     <br></br>
 				</form>
 				{this.state.searchResults.map((result, key) => {
-					return <ServiceCard result={result} key={key} />;
+					return <ServiceCard id="image-change" result={result} key={key} />;
 				})}
                 </div>
 			</div>
