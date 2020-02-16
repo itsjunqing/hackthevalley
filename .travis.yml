@@ -16,7 +16,8 @@ before_script:
 script:
   - cd ./client
   - npm install
-  - npm run-script build
+  - unset CI
+  - npm run build
 deploy:
   skip_cleanup: true
   provider: firebase
