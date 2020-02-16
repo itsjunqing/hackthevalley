@@ -16,9 +16,9 @@ exports.findAll = async function(req, res) {
 
 exports.findCategory = async function(req, res) {
 	try {
-		const {category} = req.query;
-		let searchResult = await Service.find({category: category});
-		console.log(searchResult)
+		const { category } = req.query;
+		let searchResult = await Service.find({ category: category });
+		console.log(searchResult);
 		res.json({
 			status: 'success',
 			message: 'Service retrieved successfully',
@@ -33,14 +33,14 @@ exports.findCategory = async function(req, res) {
 exports.new = function(req, res) {
 	// console.log('new working');
 	let service = Service();
-	service.userID = req.body.userID;
-	service.title = req.body.title;
-	service.description = req.body.description;
-	service.rating = req.body.rating;
-	service.category = req.body.category;
-	service.cost = req.body.cost;
-	service.long = req.body.long;
-	service.lat = req.body.lat;
+	service.userID = req.query.userID;
+	service.title = req.query.title;
+	service.description = req.query.description;
+	service.rating = req.query.rating;
+	service.category = req.query.category;
+	service.cost = req.query.cost;
+	service.long = req.query.long;
+	service.lat = req.query.lat;
 
 	//saves in database
 	service.save(function(err) {

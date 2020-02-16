@@ -16,8 +16,8 @@ exports.findAll = async function(req, res) {
 
 exports.new = function(req, res) {
 	let user = User();
-	user.name = req.body.name;
-	user.email = req.body.email;
+	user.name = req.query.name;
+	user.email = req.query.email;
 	//saves in database
 	user.save(function(err) {
 		if (err) {
