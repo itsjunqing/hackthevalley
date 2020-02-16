@@ -14,17 +14,17 @@ body {
 
 .home-description{
     font-family: 'SFProDisplay';
-    opacity: 70% !important;
+    /* opacity: 70% !important; */
 }
 
 .home-advantages{
     font-family: 'SFProDisplay';
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 .home-subtitle{
     font-family: 'SFProDisplay';
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 h3{

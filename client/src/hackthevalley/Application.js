@@ -69,6 +69,7 @@ export default class ServiceForm extends React.Component {
           
           <label for="description">Description:</label>
           <textarea class="application-input" id="description" name="description" value={this.state.description} onChange={this.description}></textarea>
+          
         </fieldset>
     
         <button type="submit">Sign Up</button>
