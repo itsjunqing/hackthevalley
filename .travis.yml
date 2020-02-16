@@ -14,8 +14,9 @@ node_js:
 before_script:
   - npm install -g firebase-tools
 script:
-  - cd ./client && npm install
-  - cd ./client && npm run-script build
+  - cd ./client
+  - npm install
+  - npm run-script build
 deploy:
   skip_cleanup: true
   provider: firebase
