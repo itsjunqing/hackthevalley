@@ -11,7 +11,11 @@ export default class ServiceCard extends Component {
 		return (
 			<div class="container card mt-3" style={{ backgroundColor: "rgb(245, 255, 236)" }}>
 				<br></br>
-                <h1>{userID}</h1>
+				<p>
+					<img src={require('./certified.png')} width={50} align="right"/>
+					<h1>{userID}</h1>
+					<button class="hellllo"> Book now! </button>
+				</p>
                 <hr></hr>
 				<h3>Rating: {rating}/10</h3>
 				<h5>Reviews: {description}</h5>

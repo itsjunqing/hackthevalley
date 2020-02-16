@@ -37,10 +37,10 @@ export default function BasicExample() {
                                 <Link class="nav-link" to="/workersnearyou">Workers Near You</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/application">Worker Application</Link>
+                                <Link class="nav-link" to="/application">Work With Us</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/feedback">Customer Feedback</Link>
+                                <Link class="nav-link" to="/feedback">Review</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact">Contact Information</Link>

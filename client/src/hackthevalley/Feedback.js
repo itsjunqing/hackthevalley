@@ -28,7 +28,7 @@ class Feedback extends Component {
                 <br></br>
             <form class="application-body">
             <br></br>
-            <h1 class="application-title">Feedback Form</h1>
+            <h1 class="application-title">Submit a Review</h1>
         
         <fieldset>
         <legend><span class="number">1</span>Basic Information</legend>

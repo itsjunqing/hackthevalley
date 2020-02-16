@@ -1,5 +1,5 @@
 body {
-    background-color: #EDF7B8;
+    background-color: #ebfff2;
     font-family: 'SFProDisplay';
 }
 
@@ -8,12 +8,49 @@ body {
     background-color: black;
 }
 
+.home-heading{
+    font-family: 'SFProDisplay';
+}
+
+.home-description{
+    font-family: 'SFProDisplay';
+    opacity: 60%;
+}
+
+.home-advantages{
+    font-family: 'SFProDisplay';
+    opacity: 60%;
+}
+
+.home-subtitle{
+    font-family: 'SFProDisplay';
+    opacity: 60%;
+}
+
+h3{
+    font-family: 'SFProDisplay';
+}
+
 .btn:hover {
     background-color: black;
 }
 
+.image{
+    position: relative;
+    width: 100%;
+}
+
+.helloworld{
+    font-family: 'SFProDisplay';
+}
+
 .btn:focus {
     background-color: black;
+}
+
+.hellllo{
+    background-color: #FFFFFF;
+    border: 2px solid #42af6c;
 }
 
 @font-face {

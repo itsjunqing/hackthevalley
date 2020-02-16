@@ -45,7 +45,7 @@ export default class ServiceForm extends React.Component {
             <div class="col center">
             <form class="application-body" onSubmit={this.handleSubmit}>
             <br></br>
-            <h1 class="application-title">Application Form</h1>
+            <h1 class="application-title">Work With Us</h1>
         
         <fieldset>
         <legend><span class="number">1</span>Profile Information</legend>

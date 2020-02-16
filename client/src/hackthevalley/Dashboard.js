@@ -42,7 +42,7 @@ export default class Dashboard extends Component {
 				<form onSubmit={this.handleSubmit}>
                     <br></br>
 					<label class="dashboard-label">
-						<h1>Find Your Workers Here!</h1><pre />
+						<h1 class="helloworld">Find Workers.</h1><pre />
 						<select class="dashboard-options" value={this.state.search} onChange={this.handleChange}>
 							<option value="Electrian">Electrian</option>
 							<option value="Handyman">Handyman</option>
