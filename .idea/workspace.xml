@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="088a889b-3b67-4d68-9df4-8e806cde35e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/MapComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MapComponent.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\hackthevalley\client\src\hackthevalley" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\hackthevalley\client\src\components" />
     </key>
@@ -74,7 +77,7 @@
       <workItem from="1581742413919" duration="24000" />
       <workItem from="1581743274167" duration="343000" />
       <workItem from="1581749863793" duration="385000" />
-      <workItem from="1581794989846" duration="2801000" />
+      <workItem from="1581794989846" duration="4841000" />
     </task>
     <servers />
   </component>

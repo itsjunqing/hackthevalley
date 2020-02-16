@@ -11,6 +11,7 @@ import Home from "./hackthevalley/Home"
 import Dashboard from "./hackthevalley/Dashboard"
 import Application from "./hackthevalley/Application"
 import ContactUs from "./hackthevalley/ContactUs"
+import MapContainer from './hackthevalley/Map'
 
 export default function BasicExample() {
     return (
@@ -35,6 +36,9 @@ export default function BasicExample() {
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact">Contact Information</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link class="nav-link" to="/map">Nearby Services</Link>
                             </li>
                         </ul>
                     </div>
@@ -89,5 +93,13 @@ function ContactBar() {
             <ContactUs />
         </div>
     );
+}
+
+function MapBar(){
+    return(
+        <div>
+            <MapContainer />
+        </div>
+    )
 }
 
