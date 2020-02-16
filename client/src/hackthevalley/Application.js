@@ -68,7 +68,7 @@ export default class ServiceForm extends React.Component {
           <input class="application-input" type="number" id="cost" name="cost" value={this.state.cost} onChange={this.handleChange}></input>
           
           <label for="description">Description:</label>
-          <textarea class="application-input" id="description" name="description" value={this.state.description} onChange={this.description}></textarea>
+          <textarea class="application-input" type="text" id="description" name="description" value={this.state.description} onChange={this.handleChange}></textarea>
           
         </fieldset>
     
