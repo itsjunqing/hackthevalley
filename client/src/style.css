@@ -1,4 +1,23 @@
 body {
-    background-image: lightgray;
-    font-family: sans-serif;
+    background-color: #EDF7B8;
+    font-family: 'SFProDisplay';
 }
+
+.btn {
+    text-align: center;
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn:focus {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay'),
+    url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+  }

@@ -1,6 +1,6 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./style.css"
+import React, { Component } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './style.css'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,8 +10,10 @@ import {
 import Home from "./hackthevalley/Home"
 import Dashboard from "./hackthevalley/Dashboard"
 import Application from "./hackthevalley/Application"
+import Feedback from "./hackthevalley/Feedback"
 import ContactUs from "./hackthevalley/ContactUs"
-import MapContainer from './hackthevalley/Map'
+import Canvas from "./hackthevalley/Particles"
+import MapContainer from "./hackthevalley/Map"
 
 export default function BasicExample() {
     return (
@@ -32,13 +34,16 @@ export default function BasicExample() {
                                 <Link class="nav-link" to="/dashboard">Dashboard</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/application">Application</Link>
+                                <Link class="nav-link" to="/workersnearyou">Workers Near You</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/application">Worker Application</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/feedback">Customer Feedback</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact">Contact Information</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link class="nav-link" to="/map">Nearby Services</Link>
                             </li>
                         </ul>
                     </div>
@@ -51,14 +56,17 @@ export default function BasicExample() {
                     <Route path="/dashboard">
                         <DashboardBar />
                     </Route>
+                    <Route path="/workersnearyou">
+                        <WorkersNearYouBar />
+                    </Route>
                     <Route path="/application">
                         <ApplicationBar />
                     </Route>
+                    <Route path="/feedback">
+                        <FeedbackBar />
+                    </Route>
                     <Route path="/contact">
                         <ContactBar />
-                    </Route>
-                    <Route path="/map">
-                        <MapContainer />
                     </Route>
                 </Switch>
             </div>
@@ -82,10 +90,28 @@ function DashboardBar() {
     );
 }
 
+function WorkersNearYouBar() {
+    return (
+        <div>
+            <MapContainer />
+        </div>
+    )
+}
+
 function ApplicationBar() {
     return (
         <div>
+            <Canvas />
             <Application />
+        </div>
+    );
+}
+
+function FeedbackBar() {
+    return (
+        <div>
+            <Canvas />
+            <Feedback />
         </div>
     );
 }
@@ -93,16 +119,9 @@ function ApplicationBar() {
 function ContactBar() {
     return (
         <div>
+            <Canvas />
             <ContactUs />
         </div>
     );
-}
-
-function MapBar(){
-    return(
-        <div>
-            <MapContainer />
-        </div>
-    )
 }
 
