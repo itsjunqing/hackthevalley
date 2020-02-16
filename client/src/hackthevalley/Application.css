@@ -1,0 +1,100 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  
+.container {
+  z-index: 1000;
+}
+
+.application-form {
+  z-index: 1000;
+}
+
+.application-body {
+  z-index: 1000;
+    font-family: sans-serif;
+    color: #384047;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: rgba(245, 255, 236);
+    border-radius: 8px;
+}
+
+.application-title {
+  z-index: 1000;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.application-input {
+  z-index: 1000;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #E9FBF5;
+    color: #8a97a0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+  button {
+    z-index: 1000;
+    padding: 19px 39px 18px 39px;
+    color: gray;
+    background-color: #EDF7B8;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: auto;
+    border: 1px solid lightgray;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    z-index: 1000;
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    z-index: 1000;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    z-index: 1000;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    z-index: 1000;
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    z-index: 1000;
+    background-color: #EDF7B8;
+    color: gray;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }

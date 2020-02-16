@@ -30,13 +30,42 @@
 }
 
 div.transbox {
-    background-color: #ffffff;
     border-bottom: 5px solid black;
     filter: alpha(opacity=60); 
 }
    
-.description {
-    font-family: "Times New Roman";
+.home-description {
+    font-size: 40px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.home-advantages {
+    font-size: 25px;
+}
+
+.home-subtitle {
+    font-size: 30px;
+}
+
+.img-responsive1 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.home-footer {
+    background-color: #1F1102;
+    min-height: 100px;
+}
+
+.home-color {
+    background-color: black;
+    color: black;
+}
+
+.button-size {
+    text-align: center;
 }

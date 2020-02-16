@@ -1,0 +1,20 @@
+.dashboard-position {
+    z-index: 1000;
+    padding: 20px 20px 50px 20px;
+    margin-bottom: 20px;
+    background-color: #EDF7B8;
+}
+
+.dashboard-label {
+    text-align: center;
+}
+
+.dashboard-options {
+    width: 300px;
+    height: 40px;
+    max-width: 100%;
+}
+
+.dashboard-submit {
+    text-align: center;
+}

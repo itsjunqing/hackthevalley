@@ -4,7 +4,8 @@ import './ContactUs.css'
 
 class ContactUs extends Component {
     render() {
-        return (
+        return (<div>
+
             <body class="body-home">
                 <div class="contact-title">
                     <h1>Contact us</h1>
@@ -25,7 +26,9 @@ class ContactUs extends Component {
                     </form>
                     </div>
                 </div>
+            
             </body> 
+            </div>
         )
     }
 }
