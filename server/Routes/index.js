@@ -11,6 +11,7 @@ const serviceController = require('../Controller/serviceController.js');
 const loginController = require('../Controller/loginController.js');
 const reviewController = require('../Controller/reviewController.js');
 const userReviewController = require('../Controller/userReviewController.js');
+const twilioController = require('../Controller/twilioController.js');
 //api routes
 router.route('/user').get(userController.findAll);
 router.route('/userCreate').get(userController.new);
@@ -27,6 +28,7 @@ router.route('/userAverage').get(userReviewController.userAverageRating);
 router.route('/userReview').get(userReviewController.userFindAll);
 router.route('/getUserReviews').get(userReviewController.getReviews);
 router.route('/userReviewCreate').get(userReviewController.userNew);
+router.route('/sendMsg').get(twilioController.sendMsg);
 
 // catch 404 and forward to error handler
 router.use(errorHandler.errorForward);
