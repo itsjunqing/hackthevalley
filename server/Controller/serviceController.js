@@ -31,16 +31,18 @@ exports.findCategory = async function(req, res) {
 };
 
 exports.new = function(req, res) {
-	// console.log('new working');
+	// console.log(req.query.userID);
+	const { userID, title, description, rating, category, cost, long, lat } = req.query;
 	let service = Service();
-	service.userID = req.query.userID;
-	service.title = req.query.title;
-	service.description = req.query.description;
-	service.rating = req.query.rating;
-	service.category = req.query.category;
-	service.cost = req.query.cost;
-	service.long = req.query.long;
-	service.lat = req.query.lat;
+
+	service.userID = userID;
+	service.title = title;
+	service.description = description;
+	service.rating = rating;
+	service.category = category;
+	service.cost = cost;
+	service.long = long;
+	service.lat = lat;
 
 	//saves in database
 	service.save(function(err) {

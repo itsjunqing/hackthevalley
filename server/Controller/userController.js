@@ -15,9 +15,11 @@ exports.findAll = async function(req, res) {
 };
 
 exports.new = function(req, res) {
+	const { name, email } = req.query;
+
 	let user = User();
-	user.name = req.query.name;
-	user.email = req.query.email;
+	user.name = name;
+	user.email = email;
 	//saves in database
 	user.save(function(err) {
 		if (err) {
@@ -30,4 +32,3 @@ exports.new = function(req, res) {
 		});
 	});
 };
-
