@@ -19,7 +19,7 @@ body {
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay'),
-    url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+    url('./fonts/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
 }
 
 #navposition {
