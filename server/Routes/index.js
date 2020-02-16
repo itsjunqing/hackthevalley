@@ -12,14 +12,16 @@ const loginController = require('../Controller/loginController.js');
 const reviewController = require('../Controller/reviewController.js');
 
 //api routes
-router.route('/user').get(userController.findAll).post(userController.new);
-router.route('/service').get(serviceController.findAll).post(serviceController.new);
+router.route('/user').get(userController.findAll);
+router.route('/userCreate').get(userController.new);
+router.route('/service').get(serviceController.findAll);
+router.route('/serviceCreate').get(serviceController.new);
 router.route('/serviceCategory').get(serviceController.findCategory);
 router.route('/login').get(loginController.login);
-router.route('/review').get(reviewController.findAll).post(reviewController.new);
+router.route('/review').get(reviewController.findAll);
+router.route('/reviewCreate').get(reviewController.new);
 router.route('/average').get(reviewController.averageRating);
 router.route('/averageEveryone').get(reviewController.averageRatingEveryone);
-
 
 // catch 404 and forward to error handler
 router.use(errorHandler.errorForward);

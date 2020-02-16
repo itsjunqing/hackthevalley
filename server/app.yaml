@@ -1,2 +1,7 @@
 runtime: nodejs
 env: flex
+handlers:
+- url: /images
+  static_dir: static/images
+  http_headers:
+    Access-Control-Allow-Origin: '*'
