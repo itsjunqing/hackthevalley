@@ -18,7 +18,7 @@ async function getServiceJSONs(category) {
     return data;
 }
 
-let temp = getServiceJSONs("Handyman")
+let temp = getServiceJSONs("Handyman");
 
 
 let currentLocation = {lat: 43.786697, lng: -79.189673};

@@ -4,7 +4,7 @@
     <list default="true" id="088a889b-3b67-4d68-9df4-8e806cde35e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MapComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hackthevalley/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hackthevalley/Map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <workItem from="1581742413919" duration="24000" />
       <workItem from="1581743274167" duration="343000" />
       <workItem from="1581749863793" duration="385000" />
-      <workItem from="1581794989846" duration="4841000" />
+      <workItem from="1581794989846" duration="5106000" />
     </task>
     <servers />
   </component>

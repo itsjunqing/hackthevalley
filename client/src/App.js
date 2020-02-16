@@ -57,6 +57,9 @@ export default function BasicExample() {
                     <Route path="/contact">
                         <ContactBar />
                     </Route>
+                    <Route path="/map">
+                        <MapContainer />
+                    </Route>
                 </Switch>
             </div>
         </Router>
