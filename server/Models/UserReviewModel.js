@@ -1,7 +1,7 @@
 'use strict';
 const mongoose = require('mongoose');
 
-const ReviewSchema = mongoose.Schema({
+const UserReviewSchema = mongoose.Schema({
 	rating: Number,
 	comment: String,
 	userName: String,
@@ -9,4 +9,4 @@ const ReviewSchema = mongoose.Schema({
 	date: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Reviews on Service Providers', ReviewSchema);
+module.exports = mongoose.model('Reviews on Users', UserReviewSchema);

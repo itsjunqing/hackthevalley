@@ -10,6 +10,8 @@ const userController = require('../Controller/userController.js');
 const serviceController = require('../Controller/serviceController.js');
 const loginController = require('../Controller/loginController.js');
 const reviewController = require('../Controller/reviewController.js');
+const userReviewController = require('../Controller/userReviewController.js');
+
 
 //api routes
 router.route('/user').get(userController.findAll).post(userController.new);
@@ -19,7 +21,10 @@ router.route('/login').get(loginController.login);
 router.route('/review').get(reviewController.findAll).post(reviewController.new);
 router.route('/average').get(reviewController.averageRating);
 router.route('/averageEveryone').get(reviewController.averageRatingEveryone);
-
+router.route('/userAverageEveryone').get(userReviewController.userAverageRatingEveryone);
+router.route('/userAverage').get(userReviewController.userAverageRating);
+router.route('/userReview').get(userReviewController.userFindAll)
+router.route('/userReviewCreate').get(userReviewController.userNew);
 
 // catch 404 and forward to error handler
 router.use(errorHandler.errorForward);

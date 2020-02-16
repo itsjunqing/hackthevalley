@@ -1,8 +1,8 @@
-Review = require('../Models/ReviewModel.js');
+UserReview = require('../Models/UserReviewModel.js');
 
-exports.findAll = async function(req, res) {
+exports.userFindAll = async function(req, res) {
 	try {
-		const results = await Review.find({});
+		const results = await UserReview.find({});
 		res.json({
 			status: 'success',
 			message: 'Review retrieved successfully',
@@ -14,12 +14,12 @@ exports.findAll = async function(req, res) {
 	}
 };
 
-exports.new = function(req, res) {
-    let review = Review();
-    review.rating = req.body.rating;
-    review.comment = req.body.comment;
-    review.userName = req.body.userName;
-    review.serviceProvider = req.body.serviceProvider;
+exports.userNew = function(req, res) {
+    let review = UserReview();
+    review.rating = req.query.rating;
+    review.comment = req.query.comment;
+    review.userName = req.query.userName;
+    review.serviceProvider = req.query.serviceProvider;
 
 	//saves in database
 	review.save(function(err) {
@@ -28,15 +28,15 @@ exports.new = function(req, res) {
 			throw err;
 		}
 		res.json({
-			message: 'New Service Provider Review created!',
+			message: 'New User Review created!',
 			data: review
 		});
 	});
 };
 
-exports.averageRating = async function(req, res) {
-    const {serviceProvider} = req.query;
-    let reviewList = await Review.find({service: serviceProvider});
+exports.userAverageRating = async function(req, res) {
+    const {userName} = req.query;
+    let reviewList = await UserReview.find({userName: userName});
     if (reviewList == null){
         res.json({rating: null})
     }else{
@@ -52,7 +52,7 @@ exports.averageRating = async function(req, res) {
     }
 }
 
-exports.averageRatingEveryone = async function(req, res) {
+exports.userAverageRatingEveryone = async function(req, res) {
     let reviewList = await Review.find({});
     if (reviewList == null){
         res.json({rating: null})
