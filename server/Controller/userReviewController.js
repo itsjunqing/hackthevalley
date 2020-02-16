@@ -53,7 +53,7 @@ exports.userAverageRating = async function(req, res) {
 }
 
 exports.userAverageRatingEveryone = async function(req, res) {
-    let reviewList = await Review.find({});
+    let reviewList = await UserReview.find({});
     if (reviewList == null){
         res.json({rating: null})
     }else{
