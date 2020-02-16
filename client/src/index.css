@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.description{
+  font-family: 'SFProDisplay';
+}
+
+.home-title{
+  font-family: 'SFProDisplay';
+}
+
+.home-heading{
+  font-family: 'SFProDisplay';
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: local('SFProDisplay'),
+  url('./fonts/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+}
