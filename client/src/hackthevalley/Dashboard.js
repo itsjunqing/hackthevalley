@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ServiceCard from './components/ServiceCard.js';
+import ServiceCard from './ServiceCard';
 import './Dashboard.css'
 
 export default class Dashboard extends Component {

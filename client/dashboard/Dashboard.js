@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ServiceCard from './components/ServiceCard.js';
+import ServiceCard from './hackthevalley/ServiceCard';
 
 export default class Dashboard extends Component {
 	constructor(props) {

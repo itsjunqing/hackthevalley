@@ -6,7 +6,7 @@ import {Map, GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react';
 const style = {
     width: '100%',
     height: '100%',
-    position: 'absolute'
+    position: 'static'
 };
 
 async function getServiceJSONs(category) {
