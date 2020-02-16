@@ -97,6 +97,7 @@ function HomeBar() {
 function DashboardBar() {
     return (
         <div>
+            <Canvas />
             <Dashboard />
         </div>
     );
